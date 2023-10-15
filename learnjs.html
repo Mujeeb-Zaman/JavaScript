@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    <h2>JavaScript</h2>
+     To add javascript use script tag.<br>
+
+     <script>
+        document.write("Hello World </br>");
+        document.write(`<h3> We can add both single and multiple line comments....
+             for single line use doulbe backward slash and for 
+             multiple use slash and asterik.</h3> <br>`); //We can add html tags in js within double quotes...like h3,br etc
+
+            //This is single line comment 
+            document.write("Single Line Commment <br>");
+
+            /* This is multiple line comment
+                This is multiple line comment.
+                This is multiple line comment
+                This is multiple line comment
+                This is multiple line comment
+                This is multiple line comment
+                This is multiple line comment   */
+            document.write("Multiple line commment <br>");
+
+    //Variables var,let, const
+        
+        //var
+        document.write("<h3>Variables</h3>");
+        document.write("Variable is a container using to store data <br>");
+        document.write("<h4>Var</h4>");
+        document.write("In JS we use three types of variable i.e var, let, const <br>");
+        document.write("We can declare a variable with a keyword var. <br> We can re-assign value to this type of variable and can also initialize <br>");
+        var a = 30;
+        var b = 50;
+        var c = a + b;
+        document.write(c + "<br>");
+        
+        //let
+        document.write("<h4>Let</h4>");
+        document.write(`Using let once we define and declare variable <br>
+            then we can't declare again a variable with but can assign a new value`);
+        document.write("<br>");
+        document.write("We are trying to clear the concept of let varible with the following examples.<br>")
+        let x = 10;
+        document.write(x + "<br>");
+        x = 20;
+        document.write(x + "<br>");
+        /*If we declare the same varaible again with let then our program will 
+        not run properly and give error like sytax error i.e varialbe x already declare... */
+
+        // let x = 30; 
+        // document.write(x + "<br>");
+        document.write("<h4>Constant</h4>");
+        document.write(`With const keyword once we declare a variable and assign a value to it,
+        then we can't re-declare the variable and can't change the value or assign new value to same variable`);
+        document.write("<br>");
+        const y = 50;
+        document.write(y+ "<br>");
+
+        /* If we do this, then a program will not run and give error,
+            i.e Syntax error: a varible has already been declared.*/
+
+        // const y = 60;
+        // document.write(y);
+        // y = 80;
+        // document.write(y);
+
+    //Variable Section Ended!
+
+    //DATA TYPES
+        
+        document.write("<h3>Data Type</h3>");
+        document.write(`In this section we will discuss about data types in javascript,<br>
+        Basically we have two main categories of data types i.e Primitive and non-primtive.`);
+        document.write("<h4>Primitive and Non-Primitive Data Types</h4>");
+            //explain both with example...
+        
+        document.write("Further more we have the following data types in javascript. <br> Basically data type show us that which type of value is stored in a variable. ");
+        document.write("<ul>");
+            document.write("<li>String</li>");
+                var fname = "Mujeeb";
+                var lname = "Zaman";
+                document.write(fname + " " + lname);    //String
+
+            document.write("<li>Number</li>");
+                let d = 50;
+                let e = 9.23;
+                document.write(d + " and " + e);    //Number with and without decimal
+
+            document.write("<li>Boolean</li>");
+                let j = true;
+                let k = false;
+                document.write(j+ " or " + k);  //Boolean value will be ture or false
+                
+            document.write("<li>Null</li>");
+                let z = null;
+                document.write(z);  //Null 
+
+            document.write("<li>Array</li>");
+                const std_names = ["Mujeeb", "Zaman", "Khan"];
+                document.write(std_names);      //We can assign multiple values to a single variable using Array
+
+            document.write("<li>Object</li>");
+                const books = {
+                    bname: "JavaScript",
+                    writer: "Mujeeb Zaman",
+                    date: 2025,
+                }
+                document.write(books);      //Using object wee can assing multiple values to a single varible with property name...
+                document.write(" <br> We can access the object values as by the following method: </br>");
+                document.write("A book named, " + books.bname + " written by " + books.writer + " in " + books.date);
+
+            document.write("<li>Undefine/Undeclare</li>");
+                let p;
+                document.write(p);  //variable which is declared but value not assigned....that's called Undefined
+
+            //    document.write(q);  //Variable which is not defined and nor declared...that's called Undeclared
+        document.write("</ul>");
+    
+    // DATA Types End..!
+
+    //Operators
+            document.write("<h3>JavaSript Operators</h3>");
+            document.write("Next we will study about operator that which type of operators are using in javascipt...<br>");
+            document.write(`We are using the operators to perform some task e.g to add two number we will use addition operator,
+            and to multiply some numbers we using multiplication operator..., There are also some categories in operators i.e. 1_Arithmatic Operators,
+            2_Comparison Operator, 3_Assignment Operator, 4_Logical Opertor... <br> `);
+            
+        //Arithmatic Opertaors
+            document.write("<h4>Arithmatic Operators</h4>");
+            document.write("In javascript we can add, subtract, and multiply numbers by using arithmatic operators. <br>");
+        //Addition
+            document.write("<b>Addition</b></br>");
+            document.write("We can add numbers by using addition operator ( + ). <br>");
+            var m = 30;
+            var n = 40;
+            var o = m + n;
+            document.write(o);
+            document.write("<br>");
+            document.write("Additon of " + m + " and " + n + " is: "+ o);
+            document.write("<br>");
+            document.write(33+77);
+            document.write("<br>");
+            // var u = prompt("Enter First Number");
+            // var v = prompt("Enter Second Number");
+            // var w = document.write(u+v);
+            // var w = u + v ;
+            // document.write(w);
+            document.write("<br>");
+        //Subtriction
+            document.write("<b>Subtraction</b>");
+            document.write("<br>");
+            document.write("We can subtract numbers with subtraction operator ( - ). ")
+            document.write("<br>");
+            var num1 = 50;
+            var num2 = 20;
+            var sub = (num1 - num2);
+            document.write(sub);
+            document.write("<br>");
+            var num3 = 150;
+            var num4 = 34;
+            var result = num3 - num4;
+            document.write(result);
+            document.write("<br>");
+            document.write("The Subraction of " + num4 + " from " + num3 + " is: " + result);
+            document.write("<br>");
+        //Multiplication
+            document.write("<b>Multiplication</b>");
+            document.write("<br>");
+            document.write("We can multiply numbers by using multiplication operator ( * ). ");
+            document.write("<br>");
+            var mul = m * n;
+            document.write(mul + "<br>");
+            document.write(num1 * num2);
+            var m_result = num3 * num4;
+            document.write("<br>");
+            document.write("The multiplication of " + num3 + " and " + num4 + " is: " + m_result);
+            document.write("<br>");
+        //Division
+            document.write("<b>Division</b>");
+            document.write("<br>");
+            document.write("Division of number is done by division operator ( / ). ");
+            document.write("<br>");
+            var dd = num1 / num2 ;
+            document.write(dd);
+            document.write("<br>");
+            var d1 = 100;
+            var d2 = 20;
+            var dr = d1 / d2 ;
+            document.write(dr);
+            document.write("<br>");
+            document.write(d1 + " divide by " + d2 + " is equal to " + dr);
+            document.write("<br>");
+        //Exponentiation
+            document.write("<b>Exponentiation</b>");
+            document.write("<br>");
+            document.write("We can take power of a number and multiply multiple time or simply says that we can <br> use expoentiaition operator ( ** ) to find out the <br> exponential value ");
+            document.write("<br>");
+            var t = 3;
+            var r = t**2;
+            document.write(r);
+            document.write("<br>");
+            document.write(t**5);
+            document.write("<br>");
+            document.write(2**5);
+            document.write("<br>");
+            document.write("2 power 10 is equal to: " + 2**10);
+            document.write("<br>");
+        //Modulus
+            document.write("<b>Modulus</b> </br>");
+            document.write("To find out the reminder of two number after division, we can use modulus operator ( % ) </br>");
+            document.write(35%10);
+            document.write("<br>");
+            document.write("If we divide 50 by 15, the reminder will be: " + 50 % 15 + "<br>");
+            document.write("<br>");
+            document.write("The reminder is " + 100 % 30 + " when we divide 100 by 30.");
+        //Increment 
+            document.write("<b>Increment</b><br>");
+            document.write("We can increase the value of a variable by using increment operator ( ++ )...");
+            document.write("<br>");
+            var i = 30;
+            document.write(i + "<br>");
+            i++;
+            document.write(i + "<br>");
+            i++;
+            document.write(i + "<br>");
+            i++;
+            document.write(i + "<br>");
+            i++;
+            document.write(i + "<br>");
+            i++;
+            document.write(i + "<br>");
+            i++;
+            document.write(i + "<br>");
+            
+        //Decrement
+            document.write("<b>Increment</b><br>");
+            document.write("We can decrease the value of a variable by using decrement operator ( -- )...");
+            document.write("<br>");
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+            i--;
+            document.write(i + "<br>");
+
+        //Assignment Operators
+            document.write("<h3>Assignment Operator</h3>");
+            document.write("We will try to understand assignment operator in this section. </br> We are using assignment operator for assigning value to a variable using different ways. </br");
+            document.write("Equal sign is used to assign a value to a variable e.g. a = 20, b=30 and name = \"Mujeeb Zaman\" etc </br>");
+            console.log("Equal sign is used to assign a value to a variable e.g. a = 20, b=30 and name = \"Mujeeb Zaman\" etc </br>");
+            var nnn = 4;
+            document.write("<br>" + nnn);
+            // console.log(nnn);
+            nnn = nnn + 10;
+            // console.log(nnn);
+            document.write("<br> " + nnn);
+            document.write("<br>");
+            nnn += 20;
+            document.write(nnn);
+            document.write("<br>");
+            var sss = 10;
+            // sss = sss - 5;
+            sss -= 5;
+            document.write(sss);
+            document.write("<br>");
+            var mmm = 10;
+            mmm *= mmm;  //var mmm = mmm * mmm; or var mmm = mmm * 10;
+            document.write(mmm);
+            document.write("<br>");
+            var ddd = 50;
+            // var dddd = 5;
+            // var rsdd = ddd / dddd;
+            // document.write(rsdd);
+            ddd /= 5; // var ddd = ddd/5;
+            document.write(ddd);
+            document.write("<br>");    
+            
+        //Comparison Operators
+            document.write("<b>Comparison Operator</b>");
+            document.write("<br>");
+            document.write("We compare two values by using comparison operator, comparison means that the values are equal to each other, </br> greater or lesser and so on...");
+            document.write("<br>");
+            document.write ("We have the following basic conmparison operators using in javascript");
+            document.write("<ul>");
+                document.write("<li>Equal to ( == )</li>    <li>Equal value and equal type ( === )</li> ");
+                document.write("<li>Not equal ( != )</li>   <li>Not equal value and type ( !== )</li>");
+                document.write("<li>Greater than ( > )</li> Less than ( < )</li>");
+                document.write("<li>Greater than or Equal to </li>  <li>Less than or equal to </li>");
+            document.write("</ul>");
+            document.write("We can make a condition using comparison opertors which we will use in the coming chapters...");
+            document.write("<br>");
+
+        //Logical Operators
+            document.write("<b>Logical Operator</b>");
+            document.write("<br> We have three basic logical operators using in javascript for making some condition <br>");
+            document.write("1. Logical AND Opertor ( && ) <br> Run when both condions are ture");
+            document.write("<br>");
+            document.write("2. Logical OR Operator ( || ) <br> Run when one of the condtion is true");
+            document.write("<br>");
+            document.write("3. Logical NOT ( ! )");
+            document.write("<br>");
+    //Operators End!
+        
+    //Statements..! if, if else, if else if, switch...
+            document.write("<h3>Statement</h3>");
+            document.write("We are using statements in javascript, for example if we have a conditon that a is greater than b, <br> if the condition is ture then statemnt will be run otherwise no ooutput.<br>");
+            document.write("We have some basic statements in javascript like; if, if-else, if-else-if and switch statement... <br> Now trying to understand one by one with solving examples.</br>");
+
+        //If Statement
+            document.write("<b>If Statement</b><br>");
+            document.write("We will use if statement, if we have only one condition (we can make condition by using comparison operator as studied above)</br>");
+            document.write("For example: <br>");
+                var firstNum = 1480;
+                var lastNum = 850;
+                if( firstNum > lastNum){
+                    document.write("First Number " + firstNum +  " is greater than last number " + lastNum);
+                }
+                document.write("<br>");
+        //If-else Statement
+            document.write("<b>If-Else Statement</b><br>");
+            document.write("We will use if-else statement, if we have a condition (we can make condition by using comparison operator as studied above), if condition is true then the inner statement will be run, otherwise else statement will be run.</br>");
+            document.write("For example: <br>");
+                var firstNum = 480;
+                var lastNum = 850;
+                if( firstNum > lastNum){
+                    document.write("First Number " + firstNum +  " is greater than last number " + lastNum);
+                }
+                else{
+                    document.write("Last Number " + lastNum +  " is greater than first number " + firstNum);
+                }
+                document.write("<br>");
+        //if-else-if statement
+            document.write("<b>IF-ELSE-IF STATEMENT</b>");
+            document.write("<br>");
+            document.write("If we have multiple or more than two conditions for testing/comparison, then we will use if-else-if statement.</br>");
+            document.write("For example: <br> ");
+                // var number = prompt("please enter number");
+                var number = 100;
+                if(number > 100){
+                    document.write("Number is greater than 100 i.e. " + number);
+                }else if(number < 100){
+                    document.write("Number is less than 100 i.e. " + number);
+                }else if(number == 100){
+                    document.write("Number is equal to 100 i.e. " + number);
+                }else{
+                    document.write("Please select a valid number");
+                }
+                document.write("<br>");
+        //switch statement
+            document.write("<b>Switch Statement</b>");
+            document.write("<br>");
+            document.write("Example: ");
+            document.write("<br>");
+                var day = 6;
+                switch(day){
+                    case 1: 
+                        document.write("Today is Monday!");
+                    break;
+                    case 2: 
+                        document.write("Today is Tuesday!");
+                    break;
+                    case 3: 
+                        document.write("Today is Wednesday! ");
+                    break;                    
+                    case 4: 
+                        document.write("Today is Thursday");
+                    break;                    
+                    case 5: 
+                        document.write("Today is Friday ");
+                    break;                    
+                    case 6: 
+                        document.write("Today is Saturday");
+                    break;                    
+                    case 7: 
+                        document.write("Today is Sunday ");
+                    break;
+                    default: 
+                        document.write("Please enter a valid number/day");
+                }
+            document.write("<br>");
+                var time = 11;
+                switch(true){
+                    case(time >= 8 && time < 12):
+                        document.write("Good Morning!");
+                    break;
+                    case(time>=12 && time < 18):
+                        document.write("Good Afternoon!");
+                    break;
+                    case(time>=18 && time <23):
+                        document.write("Good Evening")
+                    break;
+                    default:
+                        document.write("You have a nice day!");
+                }
+                document.write("<br>");
+        //Ternay Operator
+            document.write("<b>Conditional Ternary Operator</b>");
+            document.write("<br>");
+            document.write("We will try to understand ternaray opertator, it's working is just same as if-else statement but the differnce is only in syntax.");
+            document.write("<br>");
+            document.write("<b>Syntax: </b> (condiiton) ? true statement : false statement;");
+            document.write("<br>");
+            document.write("For example: </br>");
+                var fullName = "Mujeeb Zaman";
+                var u;
+                (fullName == "Mujeeb Zaman") ? u=fullName : u="False";
+                document.write(u);
+                document.write("<br>");
+    //Statement End!
+
+    //Function Start
+            document.write("<h3>Function</h3>");
+            document.write("Lines of code perform some specific task or have functionality is known as function. <br>");
+            document.write(`Function contain some lines of codes to perform a task or the statement which we can use again and again by calling the funciton. <br>
+            We have two main parts of function i.e. Function Definition/Decleration and Function Call..., First we define the funcion and then we can call it any where in the program. <br>
+            <b> Syntax:  </b> function ftnName(){ --Funtion Definiton</br>
+                statements; </br>
+                line of code;<br>
+            } <br> ftnName(); --Funciton Call`);
+            document.write("<br>");
+            document.write("For example: ");
+                function hello(){
+                    document.write("Hello World");
+                }
+                hello();
+                document.write("<br>");
+            hello();
+            document.write("<br>");
+                hello();
+            document.write("<br>");
+                function add(){
+                    var n1 = 150;
+                    var n2 = 200;
+                    document.write(n1+n2);
+                }
+                add();
+                document.write("<br>");
+
+            function xing(x1,x2){
+                document.write(x1*x2);
+            }
+            xing(90,10);
+            document.write("<br>");
+            xing(40,50);
+            document.write("<br>");
+
+            function fullNaaame(fname,lname){
+                document.write("Your Full Name is: " + fname +" "+ lname);
+            }
+            fullNaaame("Mujeeb" , "Zaman" );
+            document.write("<br>");
+
+            fullNaaame("Zaman", "Khan");
+            document.write("<br>");
+
+            function cab(s1,s2){
+                var s_result = s1 - s2;
+
+                return s_result;
+            }
+            var rexult = cab(40,30);
+            console.log(rexult);
+            document.write(rexult);
+            document.write("<br>");
+            document.write("<b>Types of Function</b> <br>");
+            document.write("We have several types of functions which we will discuss in this section.");
+            document.write("<ol>");
+                document.write("<li>Simple/Named Function</li> <li>Anonymous Function</li> <li>Return Function</li> <li>Arrow Function</li>");
+            document.write("</ol>");
+    //Function End!
+
+    //Events Start!
+            document.write("<h3>Events</h3>");
+            document.write("If we want to perform some special task through defining a function, for this purpose we use a concept called events. There is many events in javascript, here we will studied some of the basic events using in javascript. <br>");
+            document.write(`First we simply define function and call it any where we want in a program. Now we define a function and call it by events. 
+            <br> We have different events like; Mouse Events, Keyboard Events and Browser Events... <br> `);
+                
+            function greeting(){
+                document.write("Assalumalium, My name is Mujeeb Zaman.");
+            }
+    //Events End!
+
+    //Loops Start!
+            document.write("<h3> Loops </h3>");
+            document.write(`If we want to print a statement more than one time as we want (i.e 100 time, 1000 time or more...), this will take more 
+            time to write and code will also repeat. </br> To reduce code and time a concept is used in javascript called loop. Using loop we can print a statement as many time as we want.<br>
+            We have several types of loops using in javascript i.e for loop, while loop, do/while, for/in (object) and for/each (array). <br> Loop definiton consist of three terms i.e. initialization, condition, increment/decrement.<br>`);
+            document.write("<b>While Loop</b> <br> Syntax: <br> initilization <br> while(condition){ <br> statement <br> --/++} <br>");
+            document.write("Examaple: ");
+                var ll = 1;
+                while(ll <= 10){
+                    document.write("Hey, Mujeeb Zaman <br>  ");
+                    ll++; 
+                }
+            document.write("<br> Example 2: ");
+                var i = 0;
+                while(i < 5 ){
+                    document.write(80+20);
+                    document.write("<br>");
+                    i = i + 1;
+                }
+            document.write("<br> Example 3: ");
+                var kk = 100;
+                while (kk > 0){
+                    document.write(kk + " I Love Pakistan! <br>");
+                    kk--;
+                }
+            document.write("<b>Do/While Loop</b> <br> While loop will run when condition is true, on the other hand do/while loop will must run at least one time <br> then after that it will check if conditon is true the loop will further run.<br> Syntax: <br> initilization <br> do{ <br> statement <br> --/++ <br> }while(condiiton)<br>");
+            document.write("Examaple: ");
+                    var dd = 1;
+                    do{
+                        document.write(dd + " Do While Loop  <br>");
+                        dd++;
+                    }while(dd < 10)
+            document.write("<b>For Loop</b> <br> For/Loop is most used and popular loop among loops because of it's syntax. <br> We can do all process in one line i.e. initilization, condition and --/++. <br> So it's more simpler and easy to use let's check syntax and examples. <br> Syntax: <br> for(initilization; conditon; --/++){ <br> Statement </br> } <br>");
+            document.write("Examaple: <br>");
+                    for( var ff = 0; ff < 10; ff++){
+                        document.write(ff + " Mujeeb Zaman <br>");
+                    }
+            document.write("Find odd and even numbers by using for loop. <br> Even Numbers: <br>");
+            
+                    for(var nn = 1; nn <= 10; nn++ ){
+                        if(nn % 2 == 0){
+                        document.write(nn + "<br>");
+                        }
+                    }
+            document.write("Odd Numbers: <br>");
+                    
+                    for(var mm = 1; mm <= 10; mm++){
+                        if( mm % 2 !== 0){
+                        document.write(mm + "<br>");
+                        }
+                    }
+
+            document.write("<b>Nested Loop: </b> The concept of using loop within the loop. In simple words, when we use a loop within another loop. <br>");
+                    for(var ol = 1; ol <= 100; ol = ol+10){
+                        for( il = ol; il < ol+10; il++){
+                            document.write(il + "  ");
+                        }
+                        document.write("<br>"); 
+                    }
+
+                    for (var pp = 1; pp <= 5; pp++){
+                        for(var qq = 1; qq <= pp; qq++){
+                            document.write(qq + "  " );
+                        }
+                        document.write("<br>");
+                    }
+
+                    for ( pp = 1; pp <= 5; pp++){
+                        for(qq = 1; qq <= pp; qq++){
+                            document.write(pp + "  ");
+                        }
+                        document.write("<br>");
+                    } 
+                document.write("<br>");
+    //Loops End!
+
+    //String Start!
+            document.write("<b>String</b> <br>  The combination of letter/alphates(word) or the group words is called string. When we assign a string to variable it's data type is string. ");
+            document.write("String has many properties and method, we will learn some of the methods in this lesson.");
+            document.write("<ul>");
+                    document.write(" <li> length </li> <li> toLowerCase() </li> <li> toUpperCase() </li> <li> trim() </li> <li> includes() </li> <li> replace() </li> <li> replaceAll() </li> <li> substr() </li> <li> subtring() </li> <li> slice() </li> <li> search() </li> <li> indexOF() </li> <li> charAt() </li> <li> concat() </li> <li> split()  </li> <li> trimStart() </li> <li> trimEnd() </li> <li> padStart() </li> <li> padEnd() </li> <li> charCodeAt() </li> <li> match() </li> <li> lastIndexOf() </li> <li> matchAll() </li> <li> startsWith() </li> <li> endsWith() </li>");
+            document.write("</ul>");
+
+                var str = "This is a string, Hi Mujeeb Zaman!";
+            document.write(" <b>Length</b> <br> To find the length of string we use a property called length. It's give us the total length of a string including space.<br>");
+                var length = str.length;
+                document.write(str.length);
+                document.write("<br>");
+            document.write(" <b> toUpperCase() </b> <br> It's the method of a string, with the help of this method we can convert the text to uppercase i.e. capital letters.<br>");
+                document.write(str.toUpperCase());
+                document.write("<br>");
+            document.write(" <b> toLowerCase() </b> <br> By using this method we can convert the whole text face into lowerase i.e lower letters. </br>");
+                document.write(str.toLowerCase());
+                document.write("<br>");
+            document.write(" <b> Trim() </b> <br>The trim method is used to remove the extra spaces in the start and in the end of the string. <br> ");
+                var str1 = "          JavaScript          ";
+                document.write(str1);
+                document.write(" " + str1.length);
+                // alert(str1);
+                document.write("<br>");
+
+                var strnew = str1.trim();
+                document.write(strnew);
+                document.write(" " + strnew.length);
+                // alert(strnew);
+                document.write("<br>");
+
+                document.write("We can also use only for start or for end i.e. <b> trimStart </b> which is used to remove the space only from start of the string and <b> trimEnd </b> which remove the end space of the string. <br> ");
+                    var ts = str1.trimStart();
+                    document.write(ts.length);
+                document.write("<br>");
+                    var te = str1.trimEnd();
+                    document.write(te.length);
+                document.write("<br>");
+                
+            document.write("<b> includes() </b> <br> Using this method we can find out or search a word or character, if find it returns true otherwise false. </br> ");
+                document.write(str.includes("hi"));
+                document.write("<br>"); 
+                document.write(str.includes("String"));
+                document.write(str.includes("Hi"));         //Case sensitive but out is still same.
+                document.write(str.includes("pakistan"));
+                document.write("<br>");
+
+            document.write("<b> startsWith and endsWith() </b> <br>  These both methods are used for finding a word or character  but in the start or end of a string. <br> startsWith() will search for a word/character in the starting position if match it returns true otherwise false, while endsWith() will searching at the ending position. <br> ");
+                document.write(str.startsWith("Th"));
+                document.write("<br>");
+                document.write(str.startsWith("The"));
+                document.write("<br>");
+                document.write(str.startsWith("This"));
+                document.write("<br>");
+                document.write(str.endsWith("zaman!"));
+                document.write("<br>");
+                document.write(str.endsWith("Zaman!"));
+                document.write("<br>");
+                document.write(str.endsWith("Zaman"));
+                document.write("<br>");
+
+            document.write("<b> search() </b> <br> This method works as a includes() but it doesn't return true or false, it will return the position if it matches the exact word else return -1. <br> ");
+                    var str9 = "This is a string, Hi Mujeeb Zaman! Hello Mujeeb Zaman!";
+                document.write(str9.search("Mujeeb"));
+                document.write(str9.search("zaman!"));
+                document.write("<br>");
+            
+            document.write(" <b> match() </b> <br> It works as a serach() but it doesn't return the position, it search for a word if match then return it in form of array and searches for words again and again. <br>");
+                document.write(str9.match(/Mujeeb/g));
+                document.write("<br>");
+                // document.write(str9.matchAll("Mujeeb"));
+                // document.write("<br>");
+            
+            document.write("<b> indexOf and lastIndexOf </b> <br> These methods also work as a search method, it returns the index of a character, indexOf search a string from left to right while lastIndexOf searching from right to left. <br>");
+                document.write(str9.indexOf("Mujeeb"));
+                document.write("<br>");
+                document.write(str9.lastIndexOf("Mujeeb"));
+                document.write("<br>");
+
+            document.write("<b> replace() </b> <br> Using this method we can replace a word with a new word <br>");
+                document.write(str9.replace("Zaman", "Khan"));
+                document.write("<br>");
+                document.write(str9.replaceAll("Zaman", "Khan"));
+                document.write("<br>");
+                document.write(str9.replace(/Mujeeb/g, "Ali"));
+                document.write("<br>");
+            
+            document.write("<b> charAt() </b> <br> If we want to find/return a character at a specific index we can do this with charAt() method. <br> In other words we can return a character by defining the postion. ");
+                document.write(str9.charAt(21));
+                document.write("<br>");
+            
+            document.write("<b> charCodeAt() </b> <br> We can also find the character code by using the method called charCodeAt(). We can find the character code by defining the index of a character not word or char itself. <br> ");
+                document.write(str9.charCodeAt(21));
+                document.write("<br>");
+            
+            document.write("<b> concat() </b> <br> By using this method we can combine two or more stings to a single string. <br>");
+                document.write(str.concat(str9));
+                document.write("<br>");
+
+            document.write("<b> split() </b> <br> Using split() method we can split a string and it will returns each character as an array. <br>");
+                document.write(str.split(""));
+                document.write("<br>");
+                document.write(str.split(" "));
+                document.write("<br>");
+
+            document.write("<b> repeat() </b> <br> This method is used for repeating the string as many time as we want. If we want to print the string more than one time again and again so we can do this with repeat() method. <br>");
+                document.write(str.repeat(3));
+                document.write("<br>");
+            
+            document.write("<b> slice </b> <br> If we want to pick out a specific part of a string for this purpose we can use slice() method. Define the starting and ending position in the slice mehtods. <br>");
+                document.write(str.slice(21));
+                document.write("<br>");
+                document.write(str.slice(21,30));
+                document.write("<br>");
+
+            document.write("<b> substr() </b> <br> substr() method works as a slice but a little difference between them. In slice() parameters define the start and end index while in substr first parameter defines the starting index but last parameter define that how many characters to be print. <br>");
+                document.write(str.substr(21,6));
+                document.write("<br>");
+
+            document.write("<b> substring </b> <br> subtring() also return a part of a string by defining the start and end position/index. <br> ");
+                document.write(str.substring(21 ,30));
+                document.write("<br>");
+    //String End!
+            
+    //Object Start!
+            document.write("<h3> Object </h3> Object is one of the most important concept using in javascript. There is no one project in which js object not used. <br> So We will try to understand object in this section. <br> ");
+            document.write(`When we define property and it's value in pairs within curly braces and assgn it into a variable is called object. <br> Sytax: <br> 
+                const obj = {
+                    property : value,
+                    property : value,
+                    Property : value
+                } <br> We can't directly access object, for this we have special methods i.e obj.property. <br> For Example: We have an object car. <br> 
+                const car = {
+                    color: "white",
+                    model: 2023
+                    make: "Honda"
+                } <br> Now if we want to access the propery color than we can  access as obj.color... <br> We can take string, number, array, function and also object in object.`);
+                document.write("<br>");
+                
+                const std = {
+                    stdName : "Mujeeb Zaman",
+                    rollNo: 35,
+                    class : " Computer Science ",
+                    Subjects : ["HTML" , "CSS" , "JavaScript"]
+                }
+                document.write(std.stdName);
+                document.write("<br>");
+                document.write(std.rollNo);
+                document.write("<br>");
+                document.write(std.class + " " + std.Subjects);
+                document.write("<br>");
+
+                document.write(`We have also a second method to access object properties but it's not the most used or popular, i.e. obj["property"] `);
+                document.write("<br>");
+                document.write(std["rollNo"]);
+                document.write("<br>");
+                document.write("This is very difficult to access properties one by one e.g. if we have 100 different properties then we write hundred lines of code to access all properties. <br> Now if we want to access the whole object for this we have a special method called for/in loop through which we can access the object as a whole at once. <br>");
+
+                for(var zz in std){
+                    document.write(std[zz] + " <br> ");
+                }
+
+                for(var ww in std){
+                    document.write(ww + " : " + std[ww]);
+                    document.write("<br>");
+                }
+
+                document.write(`We have a second to define/create object but it's not famous. <br> Sntax: <br> 
+                    const obj = new Object(); <br> 
+                    obj.first = "Mujeeb"; <br>
+                    obj.last = "Zaman" `);
+                    document.write("<br>");
+
+                    const newobj = new Object();
+
+                    newobj.firstName = "Mujeeb"; 
+                    newobj.lastName = "Zaman";
+
+                    document.write(newobj.firstName + " <br> " + newobj.lastName);
+                    console.log(newobj);
+                document.write("<br>");
+
+                    for(var nan in newobj){
+                        document.write(nan + " : " + newobj[nan] + " <br> ");
+                    }
+    //Object End!
+
+    //Array Start!
+                document.write("<h3>Array</h3> The most common used and most important concept in javascript is array. <br> When we assign multiple values seperated by commas in square brackets to a single varibale, this is called an Array.<br>    ");
+                document.write(` Syntax: const arr = ["Mujeeb" , "Zaman" , 25 ];  <br> For example: <br> `);
+                    const students = [ "Mujeeb" , "Zaman" , "Khan"];
+                    document.write(students);
+                document.write("<br>");
+                    document.write(students[1]);
+                document.write("<h4>Array Methods</h4> <br> We have the following array methods.");
+                document.write("<ul>");
+                    document.write(` <li>sort()</li> <li>reverse()</li> <li>pop()</li> <li>push()</li> <li>shift()</li> <li>unshift()</li> <li>concat()</li> <li>join()</li> <li>slice()</li> 
+                    <li>splice()</li> <li>isArray()</li> <li>indexOf()</li> <li>lastIndexOf()</li> <li>entries()</li> <li>every()</li> <li>filter()</li> <li>find()</li> 
+                    <li>findIndex()</li> <li>includes()</li> <li>some()</li> <li>forEach()</li> <li>delete()</li> <li>flat()</li> <li>map()</li> <li>reduce()</li> <li>keys()</li>
+                    <li>toString() </li> <li>valueOf() </li> <li>fill() </li> <li>spread(...)</li> `);
+                document.write("</ul>");
+                document.write("<b>sort()</b> <br> The array is sorted in alphabetical order by a method called sort(). ");
+                    var r = ["Mujeeb", "Zaman", "Ali", "Khan"];
+                document.write("<br>");
+                    document.write(r.sort());
+                document.write("<br>");
+                document.write("<b>reverse()</b> <br> The array is sorted in reverse order by a method called reverse()> <br>");
+                    document.write(r.reverse());
+                document.write("<br>");
+                document.write("<b>pop()</b> <br> To delete the last element from the array use the pop() method. It returns the deleted element.<br>");
+                document.write(r);
+                document.write("<br>");
+                    document.write(r.pop());
+                document.write("<br>");
+                document.write(r);
+                document.write("<br>");
+                document.write("<b>push()</b> <br> We can add an element at last position to an array using push() method. <br> It returns the total number of elements in the array.<br>");
+                document.write(r.push("Usman"));
+                document.write("<br>");
+                document.write(r);
+                document.write("<br>");
+                document.write("<b> shift() and unshift() </b> <br> With shift() method we can delete the element from starting positon of an array and it will return the deleted/removed element. <br>");
+                    document.write(r.shift());
+                    document.write("<br>");
+                document.write(r);
+                document.write("<br> While with unshift() method we can add an element at first position/index in the array and it returns the total number of elements in the array. </br>");
+                    document.write(r.unshift("Umar"));
+                document.write("<br>");
+                document.write(r);
+                document.write("<br>")
+                document.write("<b> concat() and join() </b> <br>  We can add two or more arrays to become a new array using concat() method. <br> We can join the array element to become a single value/string by using join() method.  </br>");
+                    const A = [ "A" , "B" , "C"];
+                    const B = [ "D" , "E" , "F"];
+                    const C = [ "G" , "H" , "I"];
+                    const D = A.concat("x", "y", "z");
+                    document.write(D);
+                document.write("<br>");
+                    document.write(A.concat(B));
+                document.write("<br>");
+                    document.write(A.concat(B,C,D));
+                document.write("<br>");
+                    document.write(A.join(" "));
+                document.write("<br>");
+                    document.write(B.join("-"));
+                document.write("<br>");
+                    document.write(C.join(" / "));
+                document.write("<br>");
+                    document.write(D.join(" * "))
+                document.write("<br>");
+                document.write("<b> slice() and splice() </b> <br> With slice() method we can get a new array from existing array by defining two parameters in slice i.e. starting index and ending index but keep in mind last index will be not counted. It will returns us a new array.  </br>");
+                    const slc = ["Mujeeb", "Zaman" , "Khan" , "Gul" , "Ali" , "Shan"];
+                    document.write(slc);
+                document.write("<br>");
+                document.write(slc.slice(1,3));
+                document.write("<br>");
+                    document.write(slc.slice(2));
+                document.write("<br>");
+                document.write("<b>splice()</b> with this method we can insert new elements in array with specified position also in the center of array. splice() has three parameters i.e. index, number of elements to delete, new element to insert <br> it will not return new array while it return existing array with changes</br>");
+                document.write(slc);
+                document.write("<br>");
+                document.write(slc.splice(2,0,"Jan"));
+                var newspl = ["A","b","c","d"];
+                document.write(newspl);
+                document.write("<br>");
+                newspl.splice(2,0, "X", "Y", "Z");
+                document.write(newspl);
+                document.write(newspl.splice(2,0,"X","Y", "Z"));
+                document.write("<br>");
+                document.write("<b>isArray</b> <br> By using this method we find out that the given variable is array or not. <br>");
+                    document.write(Array.isArray(slc));
+                document.write("<br>");
+                    var asd = Array.isArray(newspl);
+                    document.write(asd);
+                    var tt = 10;
+                document.write("<br>");
+                    document.write(Array.isArray(tt));
+                document.write("<br>");
+                document.write("<b>indexOf() </b> indexOf() method returns us the index of an elemnet in the array. We also have second parameter for starting index if the element repeat in the array. <br>");
+                var io = ["a","b", "c", "a" , "d" , "e", "f"];
+                    document.write(io.indexOf("a"));
+                document.write("<br>");
+                    document.write(io.indexOf("a", 2));
+                document.write("<br>");
+                document.write("<b> lastIndexOf() </b> <br> This method also returns the index but the only difference is that it counts from right side or end of the array. <br>");
+                    document.write(io.lastIndexOf("a"));
+                    document.write("<br>");
+                document.write("<b>includes()</b> <br> If we want to know that an element is present in the array or not, using inculudes() method. <br> It returns true if element is present else false</br> ");
+                    document.write(io.includes("a"));
+                document.write("<br>");
+                    document.write(io.includes("g"));
+                document.write("<br>");
+                document.write("<b>some()</b> <br> It will returns true if some elements match the condition otherwise false. <br>");
+                    document.write(io.some(findA));
+                    function findA(alph){
+                        return alph == "hjk";
+                    }
+                document.write("<br>");
+                document.write("<b> every() </b> This function will return true if every element pass the condition otherwise false. <br>");
+                    var ages = [ 20, 30 , 27,18, 17, 19 , 30, 29 , 40 ,25];
+                    document.write(ages.every(checkAge));
+                    function checkAge(age){
+                        return age > 18;
+                    }
+                document.write("<br>");
+                document.write("<b> find() </b> <br> Using this method we can find an element in the array but it returns only the first match and stops further searching. <br>");
+                document.write(ages.find(findThirty));
+                // document.write("<br>");
+                    // document.write(io.find("a"));
+                document.write("<br>");
+                document.write("<b> findIndex() </b> <br> This will return the index of the first match. <br> ")
+                document.write(ages.findIndex(findThirty));
+                    function findThirty(num) {
+                        return num > 20;
+                    }
+                document.write("<br>");
+                document.write("<b> filter() </b> <br> If we want to find all elements in the array which pass the condition not only the first element, for this we are using a method called filter(). <br> It will returns all the matching elements in the new array. <br>");
+                document.write(ages.filter(checkAdult));
+                    function checkAdult(ag){
+                        return ag > 20;
+                    }
+                document.write("<br>");
+                document.write("<b> toString() </b> <br> Using this method, we can convert an array to string and once it's converted then no one array function is applied on it. <br>");
+                document.write(ages.toString());
+                document.write("<br>");
+                document.write("<b> valueOf() </b> this is the default method of array to print, without this we can also print an array <br>");
+                document.write(io);
+                document.write("<br>");
+                    document.write(io.valueOf());
+                document.write("<br>");
+                document.write("<b>fill</b> Using this method we can fill an array with a static value. <br>");
+                document.write(io.fill("A"));
+                document.write("<br>");
+                document.write("<b>forEach() </b> <br> If we want to do some specific task with array, forEach() method will be used. <br>");
+                const stdlist = ["Mujeeb" , "Zaman" , "Khan" , "Gul" , "Ali" , "Shan"];
+                document.write("<br>")
+                 document.write("<h2>List of Students</h2>");
+                    stdlist.forEach(function(value,index,array){
+                    document.write("<br>" + index + ": " + value + "<br>");
+                 });
+
+                document.write("<b> map() </b> <br> If we have a numeric array and we want some calculations on it and it returns the result as an new array, for this using map() method. <br>");
+                 var mp = [ 10 , 20 , 30 , 40, 50 ];
+                 document.write(mp);
+                 document.write("<br>");
+                 document.write(mp.map(addNum));
+                 function addNum(n){
+                    return n*2;
+                 }
+
+    //Array End!
+
+     </script>
+
+<!-- Event Call Start-->
+    <!-- Let's learn events by practical examples.<br>
+     <b>Click</b><br>
+     <button onclick="greeting()"> Click Me! </button>
+     <br>
+     <b>Dobule Click</b><br>
+     <button ondblclick="greeting()"> Click Me! </button>
+     <br>
+     <b>Right Click</b><br>
+     <button oncontextmenu="greeting()"> Click Me! </button>
+     <br>
+     <b>Mouse Hover</b><br>
+     <button onmouseenter="greeting()"> Click Me! </button>
+     <br>
+     <b>Mouse Out</b><br>
+     <button onmouseout="greeting()"> Click Me! </button>
+     <br>
+     <b>Mouse Down</b><br>
+     <button onmousedown="greeting()"> Click Me! </button>
+     <br>
+     <b>Mouse Up</b><br>
+     <button onmouseup="greeting()"> Click Me! </button>
+     <br>
+     <b>Key Press</b><br>
+     <button onkeypress="greeting()"> Click Me! </button>
+     <br>
+     <b>Key Up</b><br>
+     <button onkeyup="greeting()"> Click Me! </button>
+     <br>
+     <b>On Load</b></br> -->
+     <!-- <button onload="greeting()"> Click Me! </button>   working in  body tag only -->
+     <!-- <br> -->
+     <!-- <b>On Unload </b></br> -->
+     <!-- <button onunoload="greeting()"> Click Me! </button>    working in  body tag only -->
+<!--Event Call End -->
+
+</body>
+</html>
